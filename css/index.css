@@ -231,6 +231,11 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
+.home .intro .intro-img:hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
 @media (max-width: 500px) {
   .home .intro .intro-img {
     width: 100%;
@@ -383,4 +388,34 @@ footer {
   display: flex;
   max-width: 100%;
   height: auto;
+}
+.about-img:hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+button {
+  background-color: #22283A;
+  width: 30%;
+  padding: 3% 0%;
+  text-align: center;
+  font-size: 1.75rem;
+  color: #F1F1F1;
+  font-weight: bold;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: #F1F1F1;
+  color: #22283A;
+}
+button:hover:hover {
+  animation-name: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+@media (max-width: 500px) {
+  button {
+    width: 100%;
+    padding: 5%;
+  }
 }
