@@ -19,8 +19,14 @@
     p {
       padding:0 15px;
     }
-  
-  }
+
+    // Setting header image to stretch to screen on phone 
+    .intro-img {
+      @media @phone {
+      width: 100%;       
+      }
+    }
+}
 
   .space-images {
     display: flex;
@@ -33,7 +39,28 @@
       border-radius: 20px;
       height: 100%;
     }
+
+    .blast {
+      @media @phone {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+      }
+    }
+    
+    .launch {
+      @media @phone {
+        display: none; 
+        } 
+    }
+
+    .sky {
+      @media @phone {
+      display: none; 
+      }
+    }
   }
+
 
   .visit-planets {
     padding: 15px;
@@ -81,4 +108,4 @@
       }
     }
   }
-}// home
+} // home

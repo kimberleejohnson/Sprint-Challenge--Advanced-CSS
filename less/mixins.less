@@ -12,7 +12,7 @@
     width: 100%; 
     padding-top: 2%; 
     display: flex; 
-    justify-content: space-between; 
+    justify-content: space-around; 
     font-style: @nav-font; 
     color: @ebony-clay; 
 }
@@ -34,4 +34,10 @@
         background-color: @color;
         color: @btn-bg-color;
       }
+    
+    // Button stretches on mobile 
+    @media @phone {  
+        width: 100%; 
+        padding: 5%; 
+    } 
 }  
