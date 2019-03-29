@@ -178,6 +178,10 @@ p {
   font-style: #454A59;
   color: #23293B;
 }
+.nav-container a {
+  text-decoration: none;
+  color: #454A59;
+}
 @media (max-width: 500px) {
   .nav-container {
     width: 100%;
@@ -306,6 +310,7 @@ footer {
   color: #F1F1F1;
   font-weight: bold;
   border-radius: 5px;
+  text-decoration: none;
 }
 .home .walk .walk-text .btn a:hover {
   background-color: #F1F1F1;
@@ -332,4 +337,9 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+.about-img {
+  display: flex;
+  max-width: 100%;
+  height: auto;
 }
