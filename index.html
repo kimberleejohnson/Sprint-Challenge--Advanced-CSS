@@ -18,12 +18,27 @@
 
 <body>
 
- <!-- navigation code here -->
+   <!-- Moved header above home container to expand width -->
+   <header class= "header">
+    <!-- This container helps me manipulate both the h1 and the nav list -->
+    <div class= "container nav-container">
+      <h1>SpaceWalkers</h1>
+      <nav> 
+          <p><a>Home</a></p>
+          <p><a>About Us</a></p>
+          <p><a>Blog</a></p>
+          <p><a>Contact</a></p>
+          <p><a>Sign In</a></p>
+      </nav>
+   </div>
+  </header>
 
   <div class="container home">
 
-    <header class="intro">
-       <!-- image code here -->
+    <!-- Changing former header to a section so I can create a header with a width beyond the home container -->
+    <section class="intro">
+       <!-- Intro image stays in container to maintain dimensions-->
+       <img src= "img/main-header.png" class= "intro-img" alt= "blue earth space view">
 
       <h2>Lift Off</h2>
     
