@@ -1,3 +1,13 @@
+// Mixin for my pulse animation 
+
+.pulse(){
+    &:hover {
+        animation-name: pulse; 
+        animation-duration: 2s; 
+        animation-iteration-count: infinite;
+      }
+}
+
 // Mixins for nav styling
 
 .nav-container-style(){
@@ -33,7 +43,10 @@
     &:hover {
         background-color: @color;
         color: @btn-bg-color;
-      }
+        .pulse(); 
+        }
+        
+
     
     // Button stretches on mobile 
     @media @phone {  
