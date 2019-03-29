@@ -1,0 +1,63 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- Adding viewport metatag for responsive design  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SpaceWalkers</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Russo+One|Ubuntu" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+
+   <!-- Moved header above home container to expand width -->
+   <header class= "header">
+    <!-- This container helps me manipulate both the h1 and the nav list -->
+    <div class= "container nav-container">
+        <h1>SpaceWalkers</h1>
+        <nav> 
+            <p><a href="/index.html">Home</a></p>
+            <p><a href="/aboutUs.html">About Us</a></p>
+            <p><a href="#">Blog</a></p>
+            <p><a href="#">Contact</a></p>
+            <p><a href="#">Sign In</a></p>
+        </nav>
+   </div>
+  </header>
+
+  <form action="action_page.php">
+        <div class="container">
+          <h1>Sign up</h1>
+          <p>Get the latest space news straight to your inbox. </p>
+          <hr>
+      
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+          <hr>
+      
+          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+          <button type="submit" class="btn">Sign Up</button>
+        </div>
+      
+        <div class="container signin">
+          <p>Already have an account? <a href="#">Sign in</a>.</p>
+        </div>
+      </form>
+
+  </div>
+  </body>
+  </html>

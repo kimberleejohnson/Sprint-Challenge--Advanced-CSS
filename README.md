@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+While adaptive layouts account for several different device types through media queries that hard code widths, they're still limited in terms of user friendliness. Responsive layouts, on the other hand, use responsive units across the site and account for thousands of different device sizes. 
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means that we design the website at a high level with mobile dimensions in mind. So, after designing our website for mobile, we set media queries with a min-width for the desktop level, instead of designing for mobile at the high level and adding max-width media queries for mobile after. 
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+Default browser font size is set to 16px. But, we don't want to use hard-coded pixels in our website design because that limits accessibility. Instead, we use responsive units like rem, which set a size of all the font on the page relative to the root html element size. Setting the root element font-size at 62.5% means that 1rem is equal to 62.5% of 16px, or 10px, which makes math for the font-sizes for the rest of our elements a whole lot easier.  
+
 4. How would you describe preprocessing to someone new to CSS?
 
+CSS is a lot of fun because it is a programming language that lets us style websites *but* there are a few limits to the language. Using a preprocessor allows us to add additional functionality to our CSS code (like variables and functions), streamline the code that we write by eliminating redundancies, and even make our CSS play nicer with other programming languages.  
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+I love how preprocessing makes it possible for us to use functions in CSS, both literally through some available functions and in concept through mixin functionality. Escaped media queries also makes code so much cleaner. While I love both of these things, the nesting and syntax aspect of each, where to put media queries or mixins so they affect the right elements, gives me te most trouble and I'm excited to get more practice. 
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 

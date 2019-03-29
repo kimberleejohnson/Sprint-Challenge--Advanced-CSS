@@ -3,6 +3,8 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <!-- Adding viewport metatag for responsive design  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>SpaceWalkers</title>
 
@@ -16,17 +18,32 @@
 
 <body>
 
- <!-- navigation code here -->
+   <!-- Moved header above home container to expand width -->
+   <header class= "header">
+    <!-- This container helps me manipulate both the h1 and the nav list -->
+    <div class= "container nav-container">
+      <h1>SpaceWalkers</h1>
+      <nav> 
+          <p><a href="/index.html">Home</a></p>
+          <p><a href="/aboutUs.html">About Us</a></p>
+          <p><a href="#">Blog</a></p>
+          <p><a href="#">Contact</a></p>
+          <p><a href="#">Sign In</a></p>
+      </nav>
+   </div>
+  </header>
 
   <div class="container home">
 
-    <header class="intro">
-       <!-- image code here -->
+    <!-- Changing former header to a section so I can create a header with a width beyond the home container -->
+    <section class="intro">
+       <!-- Intro image stays in container to maintain dimensions-->
+       <img src= "img/main-header.png" class= "intro-img" alt= "blue earth space view">
 
       <h2>Lift Off</h2>
     
       <p>As we got further and further away, it [the Earth] diminished in size. Finally it shrank to the size of a marble, the most beautiful you can imagine. That beautiful, warm, living object looked so fragile, so delicate, that if you touched it with a finger it would fall apart. Seeing this has to change a man.</p>
-    </header>
+    </section>
 
     <section class="space-images">
         <img src="img/blast.png" class="blast" alt="Rocket blasting off">
@@ -51,8 +68,8 @@
       
         <p>Suddenly struck me that that tiny pea, pretty and blue, was the Earth. I put up my thumb and shut one eye, and my thumb blotted out the planet Earth.</p>
       
-        <div class="btn">
-          Sign Up
+        <div class= "btn">
+          <a href="signUp.html">Sign Up</a>
         </div>
       </div>
       

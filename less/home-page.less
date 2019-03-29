@@ -1,3 +1,11 @@
+// Header styling above the home container so we get a nice long background
+.header {
+  width: 100%;
+  background-color: @nav-bg;
+  border: 2px solid; 
+  border-color: @nav-border; 
+}
+
 // Home Content
 
 .home {
@@ -10,9 +18,19 @@
 
     p {
       padding:0 15px;
-    }
-  
+    } 
+    
+    
+    // Setting header image to stretch to screen on phone 
+    .intro-img { 
+      .pulse(); 
+      
+      @media @phone {
+      width: 100%;       
+      }
+    
   }
+}
 
   .space-images {
     display: flex;
@@ -24,8 +42,30 @@
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+      .pulse(); 
+    }
+
+    .blast {
+      @media @phone {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+      }
+    }
+    
+    .launch {
+      @media @phone {
+        display: none; 
+        } 
+    }
+
+    .sky {
+      @media @phone {
+      display: none; 
+      }
     }
   }
+
 
   .visit-planets {
     padding: 15px;
@@ -46,8 +86,19 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      width: 100%;  
+      padding: 5% 0%; 
+      flex-direction: column-reverse;      
+      }
+
     .walk-text {
       width: 50%;
+
+      @media @phone {  
+        width: 100%; 
+        padding: 5%; 
+      }
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +109,26 @@
       }
 
       .btn {
+        .btn-style(); 
+
+        a {
+          .btn-style();  
+          text-decoration: none;  
+        }
       }
+
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+      .pulse(); 
+
+      @media @phone {
+        width: 90%; 
+        margin-left: 5%; 
+        margin-right: 5%; 
+      }
       
       img {
         width: 100%;
@@ -72,4 +137,4 @@
       }
     }
   }
-}// home
+} // home

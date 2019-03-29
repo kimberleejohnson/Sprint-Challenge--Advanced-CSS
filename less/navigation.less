@@ -1,1 +1,25 @@
-// Navigation code here
+// Navigation styles as mixins, in case I Need to use later! 
+
+.nav-container {
+    .nav-container-style(); 
+
+    nav {
+        .nav-menu-style();
+    }
+
+    a {
+        text-decoration: none; 
+        color: @river-bend; 
+        .pulse(); 
+    }
+
+    p {
+        .pulse();
+    }
+
+    // Nav bar wraps on mobile
+    @media @phone {
+        width: 100%; 
+        flex-wrap: wrap;      
+    }
+}

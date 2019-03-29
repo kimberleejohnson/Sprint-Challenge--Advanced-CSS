@@ -1,1 +1,56 @@
-// Mixins Here
+// Mixin for my pulse animation 
+
+.pulse(){
+    &:hover {
+        animation-name: pulse; 
+        animation-duration: 2s; 
+        animation-iteration-count: infinite;
+      }
+}
+
+// Mixins for nav styling
+
+.nav-container-style(){
+    width: 50%; 
+    padding: 1%; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.nav-menu-style(){
+    width: 100%; 
+    padding-top: 2%; 
+    display: flex; 
+    justify-content: space-around; 
+    font-style: @nav-font; 
+    color: @ebony-clay; 
+}
+
+// Mixin for the button style, in case we need more buttons! 
+
+.btn-style(@background-color: @btn-bg-color, @color: @sea-shell, @width: 30%, @padding: 3% 0%, 
+@text-align: center, @font-size: 1.75rem, @font-weight: bold, @border-radius: 5px){
+    background-color: @background-color; 
+    width: @width; 
+    padding: @padding; 
+    text-align: @text-align;
+    font-size: @font-size;
+    color: @color;
+    font-weight: @font-weight; 
+    border-radius: @border-radius; 
+
+    &:hover {
+        background-color: @color;
+        color: @btn-bg-color;
+        .pulse(); 
+        }
+        
+
+    
+    // Button stretches on mobile 
+    @media @phone {  
+        width: 100%; 
+        padding: 5%; 
+    } 
+}  
